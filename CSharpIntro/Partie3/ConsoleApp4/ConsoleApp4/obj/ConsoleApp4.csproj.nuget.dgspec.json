@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\utilisateur\\source\\repos\\Partie3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj": {}
+    "C:\\Users\\utilisateur\\github\\CSharpDemo\\CSharpIntro\\Partie3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\utilisateur\\source\\repos\\Partie3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj": {
+    "C:\\Users\\utilisateur\\github\\CSharpDemo\\CSharpIntro\\Partie3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\utilisateur\\source\\repos\\Partie3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
+        "projectUniqueName": "C:\\Users\\utilisateur\\github\\CSharpDemo\\CSharpIntro\\Partie3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
         "projectName": "ConsoleApp4",
-        "projectPath": "C:\\Users\\utilisateur\\source\\repos\\Partie3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
+        "projectPath": "C:\\Users\\utilisateur\\github\\CSharpDemo\\CSharpIntro\\Partie3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
         "packagesPath": "C:\\Users\\utilisateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\utilisateur\\source\\repos\\Partie3\\ConsoleApp4\\ConsoleApp4\\obj\\",
+        "outputPath": "C:\\Users\\utilisateur\\github\\CSharpDemo\\CSharpIntro\\Partie3\\ConsoleApp4\\ConsoleApp4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
