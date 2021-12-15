@@ -17,7 +17,6 @@ while (keepAsking)
     } else if(numberString == "")
     {
         Console.WriteLine("Vous n'avez rien écrit, veuillez entrer un nombre à multiplier svp.");
-        keepAsking =true;
     } else
     {
         // vérifier si l'utilisateur a bien entré un nombre
@@ -28,7 +27,6 @@ while (keepAsking)
         } catch (Exception ex)
         {
             Console.WriteLine("Ce n'est pas un nombre, veuillez entrer un nombre svp.");
-            keepAsking =true;
         }           
     }
 }
