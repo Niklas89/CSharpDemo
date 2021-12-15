@@ -1,25 +1,43 @@
 ﻿// See https://aka.ms/new-console-template for more information
-// Liste avec tous les nombres
-List<int> numbers = new List<int> { 10, 5, 20, 2, 3 };
 // Création d'une liste pour les nombres que l'utilisateur souhaite multiplier
 List<int> multiplyNumbers = new List<int>();
+string numberString;
+int number;
 int multiplicationResult = 1;
-// Demander à l’utilisateur les nombres qu’il souhaite multiplier, s'il répond "oui" les stocker dans la liste
-for (int i = 0; i < numbers.Count; i++)
+Boolean keepAsking = true;
+// Demander à l’utilisateur les nombres qu’il souhaite multiplier, tapez "Quit" pour quitter le program
+Console.WriteLine("Ecrivez 'Quit' pour quitter le program.");
+while (keepAsking)
 {
-    Console.WriteLine(numbers[i]);
-    Console.WriteLine("Souhaitez-vous multiplier ce nombre?");
-    string reply = Console.ReadLine();
-    if(reply == "oui")
+    Console.WriteLine("Entrez un nombre que vous souhaitez multiplier:");
+    numberString = Console.ReadLine();
+    if(numberString == "Quit")
     {
-        multiplyNumbers.Add(numbers[i]);
-    } 
+        keepAsking = false;
+    } else if(numberString == "")
+    {
+        Console.WriteLine("Vous n'avez rien écrit, veuillez entrer un nombre à multiplier svp.");
+        keepAsking =true;
+    } else
+    {
+        // vérifier si l'utilisateur a bien entré un nombre
+        try
+        {
+            number = int.Parse(numberString);
+            multiplyNumbers.Add(number);
+        } catch (Exception ex)
+        {
+            Console.WriteLine("Ce n'est pas un nombre, veuillez entrer un nombre svp.");
+            keepAsking =true;
+        }           
+    }
 }
 // Calculer le résultat de la multiplication et l’afficher en rappelant tous les nombres
+Console.Write("Les nombres à multiplier sont : ");
 for (int i = 0; i < multiplyNumbers.Count; i++)
 {
-    Console.WriteLine("Nombre à multiplier : "+multiplyNumbers[i]);
+    Console.Write(multiplyNumbers[i] + ", ");
     multiplicationResult *= multiplyNumbers[i];
      
 }
-Console.WriteLine("Résultat de la multiplication " + multiplicationResult);
+Console.WriteLine("Résultat de la multiplication : " + multiplicationResult);
