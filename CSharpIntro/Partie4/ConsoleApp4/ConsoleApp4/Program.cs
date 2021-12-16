@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Création d'une liste pour les nombres que l'utilisateur souhaite multiplier
 List<int> multiplyNumbers = new List<int>();
-string numberString;
+string numberString = null;
 int number;
 int multiplicationResult = 1;
 Boolean keepAsking = true;
@@ -30,12 +30,16 @@ while (keepAsking)
         }           
     }
 }
-// Calculer le résultat de la multiplication et l’afficher en rappelant tous les nombres
-Console.Write("Les nombres à multiplier sont : ");
-for (int i = 0; i < multiplyNumbers.Count; i++)
+if (multiplyNumbers.Count > 0)
 {
-    Console.Write(multiplyNumbers[i] + ", ");
-    multiplicationResult *= multiplyNumbers[i];
-     
+    // Calculer le résultat de la multiplication et l’afficher en rappelant tous les nombres
+    Console.Write("Les nombres à multiplier sont : ");
+    for (int i = 0; i < multiplyNumbers.Count; i++)
+    {
+        Console.Write(multiplyNumbers[i] + ", ");
+        multiplicationResult *= multiplyNumbers[i];
+
+    }
+    Console.WriteLine("Résultat de la multiplication : " + multiplicationResult);
 }
-Console.WriteLine("Résultat de la multiplication : " + multiplicationResult);
+
