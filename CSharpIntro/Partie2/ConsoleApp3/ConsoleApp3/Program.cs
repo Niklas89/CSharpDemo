@@ -1,33 +1,66 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int age;
-string sex;
-// demander l'age de l'utilisateur
-Console.WriteLine("Quel est ton age?");
-string ageString = Console.ReadLine();
-age = int.Parse(ageString);
-// demander le sex de l'utilisateur
-Console.WriteLine("Quel est ton sex?");
-sex = Console.ReadLine();
-// comparer l'age de l'utilisateur et son sex pour afficher s'il est masculin ou feminin, majeur ou mineur
-if( age >= 18)
+int age = 0;
+string gender;
+Boolean keepAskingAge = true;
+Boolean keepAskingGender = true;
+// Demander en boucle de rentrer un nombre pour l'age, Exception prend l'erreur et redemande de saisir
+do
 {
-    if(sex == "masculin")
+    try
     {
-        Console.WriteLine("Vous êtes un homme et vous êtes majeur.");
-    } else if(sex == "feminin")
-    {
-        Console.WriteLine("Vous êtes une femme et vous êtes majeur.");
+        // demander l'age de l'utilisateur
+        Console.WriteLine("Veuillez renseigner votre age :");
+        string ageString = Console.ReadLine();
+        age = int.Parse(ageString);
+        keepAskingAge = false;
     }
-    
-} else
+    catch (Exception e)
+    {
+        Console.WriteLine("Veuillez entrer un nombre pour votre age svp. \n");
+    }
+} while (keepAskingAge);
+// Demander en boucle de renseigner masculin ou feminin, si ca ne correspond pas il faut reessayer
+do
 {
-    if (sex == "masculin")
+    // demander le sex de l'utilisateur
+    Console.WriteLine("Veuillez renseigner votre sexe (masculin / feminin) :");
+    gender = Console.ReadLine();
+    // comparer l'age de l'utilisateur et son sex pour afficher s'il est masculin ou feminin, majeur ou mineur
+    if (age >= 18)
     {
-        Console.WriteLine("Vous êtes un homme et vous êtes mineur.");
-    }
-    else if (sex == "feminin")
-    {
-        Console.WriteLine("Vous êtes une femme et vous êtes mineur.");
-    }
-}
+        if (gender == "masculin")
+        {
+            Console.WriteLine("Vous êtes un homme et vous êtes majeur.");
+            keepAskingGender = false;
+        }
+        else if (gender == "feminin")
+        {
+            Console.WriteLine("Vous êtes une femme et vous êtes majeur.");
+            keepAskingGender = false;
+        }
+        else
+        {
+            Console.WriteLine("Vous devez indiquer si vous êtes 'masculin' ou 'feminin'");
+            keepAskingGender = true;
+        }
 
+    }
+    else
+    {
+        if (gender == "masculin")
+        {
+            Console.WriteLine("Vous êtes un homme et vous êtes mineur.");
+            keepAskingGender = false;
+        }
+        else if (gender == "feminin")
+        {
+            Console.WriteLine("Vous êtes une femme et vous êtes mineur.");
+            keepAskingGender = false;
+        }
+        else
+        {
+            Console.WriteLine("Vous devez indiquer si vous êtes 'masculin' ou 'feminin'");
+            keepAskingGender = true;
+        }
+    }
+} while (keepAskingGender);
