@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 string civility = "Monsieur";
-string name = "Vincent";
+string firstName = "Vincent";
 int visits = 1;
-Console.WriteLine("Bonjour "+ civility + " "+name+", vous êtes venu nous rendre visite "+visits+" fois");
+Console.WriteLine("Bonjour " + civility + " " + firstName + ", vous êtes venu nous rendre visite " + visits + " fois");
