@@ -10,7 +10,7 @@ Boolean keepAsking = true;
 do
 {
     // Demander à l'utilisateur son prénom
-    Console.WriteLine("Quel est ton prénom?");
+    Console.WriteLine("Veuillez saisir votre prénom :");
     firstName = Console.ReadLine();
     if(firstName == "Quit")
     {
@@ -18,7 +18,7 @@ do
     } else
     {
         // Demander à l'utilisateur son nom
-        Console.WriteLine("Quel est ton nom?");
+        Console.WriteLine("Veuillez saisir votre nom :");
         lastName = Console.ReadLine();
         if(lastName == "Quit")
         {
@@ -28,7 +28,7 @@ do
             try
             {
                 // Demander à l'utilisateur sa date de naissance
-                Console.WriteLine("Quel est ton annee de naissance?");
+                Console.WriteLine("Veuillez saisir votre annee de naissance :");
                 dateBirthString = Console.ReadLine();
                 if (dateBirthString == "Quit")
                 {
@@ -40,7 +40,7 @@ do
                 {
                     dateBirth = int.Parse(dateBirthString);
                     // Afficher les renseignements avec les détails entrés ci-dessus
-                    Console.WriteLine("Fiches de renseignement \n * Nom: " + lastName + "\n \n * Prenom: " + firstName + "\n \n * Age : " + dateBirth);
+                    Console.WriteLine("Fiches de renseignement \n * Nom : " + lastName + "\n \n * Prenom : " + firstName + "\n \n * Age : " + (DateTime.Now.Year - dateBirth));
                     keepAsking = false;
                 }
             }
