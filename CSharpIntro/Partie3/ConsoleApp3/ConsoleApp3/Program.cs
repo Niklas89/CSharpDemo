@@ -13,16 +13,12 @@ while(keepAsking)
         number = int.Parse(numberString);
         result += number;
         // demander à l'utilisateur s'il veut ajouter encore un nombre
-        Console.WriteLine("Ajouter encore un nombre?");
+        Console.WriteLine("Ajouter encore un nombre (répondre 'non' pour quitter) ?");
         string addNumber = Console.ReadLine();
-        // Tant que l’utilisateur ne répond pas non le program continue à demander un nombre
+        // Tant que l’utilisateur ne répond pas non le programme continue à demander un nombre
         if (addNumber == "non")
         {
             keepAsking = false;
-        }
-        else
-        {
-            keepAsking = true;
         }
     } catch (Exception ex)
     {

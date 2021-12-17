@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Random randomNumber = new Random();
 // Définir un nombre aléatoire entre 1 et 50
-int numberToGuess = randomNumber.Next(1,50);
+int numberToGuess = randomNumber.Next(1,51);
 Boolean keepGuessing = true;
 int attempt = 0; // nombre de tentatives pour trouver le nombre
 // Demander à l’utilisateur de deviner ce nombre, continuer à demande tant que qu'il n'a pas trouvé
