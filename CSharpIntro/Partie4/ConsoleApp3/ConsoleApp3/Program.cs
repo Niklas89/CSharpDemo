@@ -8,5 +8,7 @@ for (int i = 0; i < numbers.Count; i++)
     Console.WriteLine(numbers[i]);
     totalNumbers += numbers[i];
 }
+// C'est plus simple de faire foreach pour les tableaux
 // Afficher le résultat dans une phrase
 Console.WriteLine("Total des nombres " + totalNumbers);
+Console.WriteLine("Total des nombres en utilisant Join : " + String.Join(" + ", numbers) + " = " + totalNumbers);

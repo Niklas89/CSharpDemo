@@ -12,5 +12,10 @@ public class Program
 		}
 		// Afficher la valeur 4 de l’énumération week
 		Console.WriteLine(Enum.GetName(typeof(Week), 3));
+
+		foreach (string day in Enum.GetName(typeof(Week)))
+        {
+			Console.WriteLine(Enum.GetName(typeof(Week), day));
+		}
 	}
 }

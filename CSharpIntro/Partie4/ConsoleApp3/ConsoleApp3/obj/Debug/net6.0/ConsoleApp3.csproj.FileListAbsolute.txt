@@ -12,3 +12,4 @@ C:\Users\utilisateur\source\repos\Partie4\ConsoleApp3\ConsoleApp3\obj\Debug\net6
 C:\Users\utilisateur\source\repos\Partie4\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ref\ConsoleApp3.dll
 C:\Users\utilisateur\source\repos\Partie4\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ConsoleApp3.pdb
 C:\Users\utilisateur\source\repos\Partie4\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ConsoleApp3.genruntimeconfig.cache
+C:\Users\utilisateur\source\repos\Partie4\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ConsoleApp3.csproj.AssemblyReference.cache

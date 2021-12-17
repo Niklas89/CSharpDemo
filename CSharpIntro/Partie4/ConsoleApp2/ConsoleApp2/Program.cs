@@ -9,10 +9,10 @@ for (int i = 0; i < languages.Count; i++)
 Console.WriteLine("Le 4ème élément de la liste : " + languages[3]);
 Console.WriteLine("L’élément à l’index 4 de la liste : " + languages[4]);
 languages.Remove("Bootstrap");
-languages[2] = "Javascript";
+// Modifier Javacrit en Javascript :
+languages[languages.IndexOf("Javacrit")] = "Javascript";
+// on peut faire aussi: languages[2] = "Javascript";
 languages.Add("C");
 // Afficher la liste
-for (int i = 0; i < languages.Count; i++)
-{
-    Console.WriteLine(languages[i]);
-}
+// cest  mieux foreach pour les tableaux
+foreach (var language in languages) Console.WriteLine(language);

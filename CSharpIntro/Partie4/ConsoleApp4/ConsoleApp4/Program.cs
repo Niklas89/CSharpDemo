@@ -40,6 +40,7 @@ if (multiplyNumbers.Count > 0)
         multiplicationResult *= multiplyNumbers[i];
 
     }
+    Console.WriteLine("Affichage en utilisant Join : " + String.Join(" x ", multiplyNumbers));
     Console.WriteLine("Résultat de la multiplication : " + multiplicationResult);
 }
 
