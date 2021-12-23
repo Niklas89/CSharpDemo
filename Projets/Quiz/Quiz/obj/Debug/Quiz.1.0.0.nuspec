@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Quiz</id>
+    <version>1.0.0</version>
+    <authors>Quiz</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\utilisateur\github\Quiz\Quiz\Quiz\bin\Debug\net6.0\Quiz.runtimeconfig.json" target="lib\net6.0\Quiz.runtimeconfig.json" />
+    <file src="C:\Users\utilisateur\github\Quiz\Quiz\Quiz\bin\Debug\net6.0\Quiz.dll" target="lib\net6.0\Quiz.dll" />
+  </files>
+</package>
